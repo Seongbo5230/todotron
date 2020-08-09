@@ -1,0 +1,27 @@
+{
+  "name": "todotron",
+  "version": "1.0.0",
+  "description": "A todo app",
+  "main": "index.js",
+  "scripts": {
+    "electron": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seongbo5230/todotron.git"
+  },
+  "keywords": [
+    "todo",
+    "app",
+    "electron"
+  ],
+  "author": "Bo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Seongbo5230/todotron/issues"
+  },
+  "homepage": "https://github.com/Seongbo5230/todotron#readme",
+  "dependencies": {
+    "electron": "^9.2.0"
+  }
+}
