@@ -56,6 +56,12 @@ const menuTemplate = [
         },
       },
       {
+        label: "Clear Todo List",
+        click() {
+          mainWindow.webContents.send("todo:clearlist");
+        },
+      },
+      {
         label: "Quit",
         accelerator: process.platform === "darwin" ? "Command+Q" : "Ctrl+Q",
         click() {
@@ -77,12 +83,13 @@ if (process.env.NODE_ENV !== "production") {
     submenu: [
       {
         role: "reload",
-      }
+      },
       {
         label: "Toggle Developer Tools",
-        accelerator: process.platform === "darwin" ? "Command+Alt+I" : "Ctrl+Shift+I",
+        accelerator:
+          process.platform === "darwin" ? "Command+Alt+I" : "Ctrl+Shift+I",
         click(item, focusedWindow) {
-        focusedWindow.toggleDevTools();
+          focusedWindow.toggleDevTools();
         },
       },
     ],
